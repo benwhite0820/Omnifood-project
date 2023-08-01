@@ -1,0 +1,53 @@
+@import '../../assets/scss/color.scss';
+
+.header {
+    background-color: $background-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    padding: 0 48px;
+
+    .logo {
+        height: 22px;
+    }
+
+    .main-nav-bar-item {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        gap: 32px;
+
+        .main-nav-bar-link {
+            transition: all 0.3s;
+            &:link,
+            &:visited {
+                display: inline-block;
+                text-decoration: none;
+                color: #333;
+                font-size: 18px;
+                font-weight: 500;
+                transition: all 0.3s;
+            }
+
+            &:hover,
+            &:active {
+                color: $lighter-orange;
+            }
+
+            &.last-nav-link:link,
+            &.last-nav-link:visited {
+                display: inline-block;
+                padding: 12px 24px;
+                border-radius: 9px;
+                background-color: $lighter-orange;
+                color: white;
+
+                &:hover,
+                &:active {
+                    background-color: $darker-orange;
+                }
+            }
+        }
+    }
+}

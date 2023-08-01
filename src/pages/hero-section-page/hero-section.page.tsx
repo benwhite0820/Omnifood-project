@@ -1,12 +1,12 @@
 import './hero-section.style.scss';
-import HeroSectionImg from '../../assets/img/hero.png';
-import CustomLogo1 from '../../assets/img/customers/customer-1.jpg';
-import CustomLogo2 from '../../assets/img/customers/customer-2.jpg';
-import CustomLogo3 from '../../assets/img/customers/customer-3.jpg';
-import CustomLogo4 from '../../assets/img/customers/customer-4.jpg';
-import CustomLogo5 from '../../assets/img/customers/customer-5.jpg';
-import CustomLogo6 from '../../assets/img/customers/customer-6.jpg';
-import Button from '../../components/button/button.component';
+import HeroSectionImg from '@assets/img/hero.png';
+import CustomLogo1 from '@assets/img/customers/customer-1.jpg';
+import CustomLogo2 from '@assets/img/customers/customer-2.jpg';
+import CustomLogo3 from '@assets/img/customers/customer-3.jpg';
+import CustomLogo4 from '@assets/img/customers/customer-4.jpg';
+import CustomLogo5 from '@assets/img/customers/customer-5.jpg';
+import CustomLogo6 from '@assets/img/customers/customer-6.jpg';
+import Button from '@components/button/button.component';
 
 const HeroSection = () => {
     return (
