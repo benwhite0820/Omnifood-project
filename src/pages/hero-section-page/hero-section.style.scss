@@ -1,0 +1,66 @@
+@import '../../assets/scss/color.scss';
+
+.section-hero {
+    background-color: $background-color;
+    padding: 96px 0;
+
+    .hero {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 96px;
+
+        .hero-text-box {
+            .hero-primary-text {
+                font-size: 52px;
+                font-weight: 700;
+                line-height: 1.05;
+                color: #333;
+                letter-spacing: -0.5px;
+                margin-bottom: 32px;
+            }
+
+            .hero-description {
+                font-size: 20px;
+                line-height: 1.6;
+                margin-bottom: 48px;
+            }
+
+            .margin-right {
+                margin-right: 16px;
+            }
+        }
+
+        .custom-logo-box {
+            display: flex;
+            margin-top: 80px;
+            align-items: center;
+
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                margin-right: -16px;
+                border: 3px solid $background-color;
+            }
+
+            p {
+                margin-left: 32px;
+                font-size: 16px;
+                font-weight: 600;
+                span {
+                    font-weight: bold;
+                    color: $darker-orange;
+                }
+            }
+        }
+
+        .hero-section-img {
+            .hero-img {
+                width: 100%;
+            }
+        }
+    }
+}
