@@ -19,7 +19,8 @@
             "@*": ["*"],
             "@components/*": ["components/*"],
             "@assets/*": ["assets/*"],
-            "@pages/*": ["pages/*"]
+            "@pages/*": ["pages/*"],
+            "@data/*": ["data/*"]
         },
 
         /* Linting */

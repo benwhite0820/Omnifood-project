@@ -1,0 +1,14 @@
+.grid-container {
+    display: grid;
+    column-gap: 64px;
+    row-gap: 96px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gird-vertical-center {
+    align-items: center;
+}

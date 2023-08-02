@@ -1,0 +1,33 @@
+@import '../../../assets/scss/color.scss';
+
+.section-how-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        border-radius: 50%;
+    }
+
+    &::before {
+        width: 60%;
+        padding-bottom: 60%;
+        background-color: $background-color;
+        z-index: -2;
+    }
+
+    &::after {
+        width: 45%;
+        padding-bottom: 45%;
+        background-color: #fae5d3;
+        z-index: -1;
+    }
+
+    .section-how-image--logo {
+        width: 35%;
+    }
+}

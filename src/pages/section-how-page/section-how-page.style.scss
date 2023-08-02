@@ -1,0 +1,23 @@
+@import '../../assets/scss/color.scss';
+
+.section-how {
+    padding: 96px 0;
+
+    .description-header {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        color: $darker-orange;
+        margin-bottom: 16px;
+        letter-spacing: 0.75px;
+    }
+
+    .description-paragraph {
+        font-size: 44px;
+        line-height: 1.2;
+        margin-bottom: 96px;
+        font-weight: 700;
+        color: #333;
+        letter-spacing: -0.5px;
+    }
+}

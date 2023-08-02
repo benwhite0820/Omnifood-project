@@ -10,42 +10,45 @@ import Button from '@components/button/button.component';
 
 const HeroSection = () => {
     return (
-        <section className="section-hero">
-            <div className="hero">
-                <div className="hero-text-box">
-                    <h1 className="hero-primary-text">
-                        A healthy meal delivered to your door, every single day
-                    </h1>
-                    <p className="hero-description">
-                        The smart 365-days-per-year food subscription that will
-                        make you eat healthy again. Tailored to your personal
-                        tastes and nutritional needs.
-                    </p>
-                    <Button buttonType="primary" className="margin-right">
-                        Start eating well
-                    </Button>
-                    <Button buttonType="normal">Learn more &darr;</Button>
-                    <div className="custom-logo-box">
-                        <img src={CustomLogo1} alt="Custom Logo" />
-                        <img src={CustomLogo2} alt="Custom Logo" />
-                        <img src={CustomLogo3} alt="Custom Logo" />
-                        <img src={CustomLogo4} alt="Custom Logo" />
-                        <img src={CustomLogo5} alt="Custom Logo" />
-                        <img src={CustomLogo6} alt="Custom Logo" />
-                        <p>
-                            <span>250,000+</span> meals delivered last year!
+        <main>
+            <section className="section-hero">
+                <div className="hero">
+                    <div className="hero-text-box">
+                        <h1 className="hero-primary-text">
+                            A healthy meal delivered to your door, every single
+                            day
+                        </h1>
+                        <p className="hero-description">
+                            The smart 365-days-per-year food subscription that
+                            will make you eat healthy again. Tailored to your
+                            personal tastes and nutritional needs.
                         </p>
+                        <Button buttonType="primary" className="margin-right">
+                            Start eating well
+                        </Button>
+                        <Button buttonType="normal">Learn more &darr;</Button>
+                        <div className="custom-logo-box">
+                            <img src={CustomLogo1} alt="Custom Logo" />
+                            <img src={CustomLogo2} alt="Custom Logo" />
+                            <img src={CustomLogo3} alt="Custom Logo" />
+                            <img src={CustomLogo4} alt="Custom Logo" />
+                            <img src={CustomLogo5} alt="Custom Logo" />
+                            <img src={CustomLogo6} alt="Custom Logo" />
+                            <p>
+                                <span>250,000+</span> meals delivered last year!
+                            </p>
+                        </div>
+                    </div>
+                    <div className="hero-section-img">
+                        <img
+                            className="hero-img"
+                            src={HeroSectionImg}
+                            alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                        />
                     </div>
                 </div>
-                <div className="hero-section-img">
-                    <img
-                        className="hero-img"
-                        src={HeroSectionImg}
-                        alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-                    />
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
     );
 };
 
