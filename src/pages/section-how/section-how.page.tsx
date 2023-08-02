@@ -5,7 +5,7 @@ import SectionHowData from '@data/sectionHow.json';
 import SectionHowAppScreen1 from '@assets/img/app/app-screen-1.png';
 import SectionHowAppScreen2 from '@assets/img/app/app-screen-2.png';
 import SectionHowAppScreen3 from '@assets/img/app/app-screen-3.png';
-import './section-how-page.style.scss';
+import './section-how.style.scss';
 
 const SectionHow = () => {
     return (
