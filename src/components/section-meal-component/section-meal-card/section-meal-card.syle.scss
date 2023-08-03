@@ -1,0 +1,64 @@
+@import '../../../assets/scss/variable.scss';
+
+.section-meal-card {
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.4s;
+
+    &:hover {
+        transform: translateY(-20px);
+        box-shadow: 0 32px 56px rgba(0, 0, 0, 0.06);
+    }
+
+    .section-meal-card--iamge {
+        width: 100%;
+    }
+    .section-meal-card--context {
+        padding: 32px 48px 48px 48px;
+
+        .section-meal-card--context__pill {
+            display: flex;
+            margin-bottom: 12px;
+            gap: 4px;
+
+            span {
+                display: inline-block;
+                padding: 4px 8px;
+                color: #333;
+                font-size: 12px;
+                font-weight: bold;
+                border-radius: 10px;
+            }
+        }
+
+        .section-meal-card--context__title {
+            font-size: 24px;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+
+        .section-meal-card--contex__items {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .section-meal-card--contex__item {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                span {
+                    font-size: 18px;
+                }
+            }
+
+            .feature-logo {
+                font-size: 24px;
+                color: $lighter-orange;
+            }
+        }
+    }
+}

@@ -42,7 +42,11 @@ const SectionFeatured = () => {
                 <div className="section-featured--logos">
                     {logoAndDescription.map(
                         ({ logo, description }: LogoAndDescription) => (
-                            <img src={logo} alt={description} />
+                            <img
+                                src={logo}
+                                alt={description}
+                                key={description}
+                            />
                         )
                     )}
                 </div>
