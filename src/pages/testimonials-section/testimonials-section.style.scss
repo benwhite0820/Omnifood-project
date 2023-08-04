@@ -1,0 +1,49 @@
+@import '../../assets/scss/variable.scss';
+
+.seciton-testimonials {
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    background-color: $background-color;
+    align-items: center;
+
+    .testimonials--container {
+        padding: 96px;
+
+        span {
+            @include subHeading;
+        }
+
+        h2 {
+            @include heading-secondary;
+        }
+    }
+
+    .testimonials--figure-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 48px;
+        column-gap: 80px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+        padding: 16px;
+
+        .gallery--figure {
+            // make sure scale img is inside the figure container
+            overflow: hidden;
+
+            .gallery--figure__photo {
+                width: 100%;
+                display: block;
+                transition: all 0.3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

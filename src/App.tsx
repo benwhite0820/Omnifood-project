@@ -4,6 +4,7 @@ import HeroSection from '@pages/hero-section/hero-section.page';
 import HowSection from '@pages/how-section/how-section.page';
 import FeatureSection from '@pages/feature-section/feature-section.page';
 import MealSection from '@pages/meal-section/meal-section.page';
+import TestimonialsSection from '@pages/testimonials-section/testimonials-section.page';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <FeatureSection />
             <HowSection />
             <MealSection />
+            <TestimonialsSection />
         </>
     );
 }
