@@ -1,5 +1,5 @@
 import GridAndCenterContainer from '@components/grid-and-center-container/grid-and-center-container.component';
-import './section-meal.style.scss';
+import './meal-section.style.scss';
 import SectionMealCard from '@components/section-meal-component/section-meal-card/section-meal-card.component';
 import sectionmealCardData from '@data/sectionMealCard.json';
 import SectionMealCheckItem from '@components/section-meal-component/section-meal-check-item/section-meal-check-item.component';
@@ -12,7 +12,7 @@ type ResponseData = {
     title: string;
 };
 
-const SectionMeal = () => {
+const MealSection = () => {
     const { sectionMealCard: responseData } = sectionmealCardData as {
         sectionMealCard: Array<ResponseData>;
     };
@@ -57,4 +57,4 @@ const SectionMeal = () => {
     );
 };
 
-export default SectionMeal;
+export default MealSection;

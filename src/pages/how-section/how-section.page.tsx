@@ -5,9 +5,9 @@ import SectionHowData from '@data/sectionHow.json';
 import SectionHowAppScreen1 from '@assets/img/app/app-screen-1.png';
 import SectionHowAppScreen2 from '@assets/img/app/app-screen-2.png';
 import SectionHowAppScreen3 from '@assets/img/app/app-screen-3.png';
-import './section-how.style.scss';
+import './how-section.style.scss';
 
-const SectionHow = () => {
+const HowSection = () => {
     return (
         <section className="section-how">
             <GridAndCenterContainer container>
@@ -56,4 +56,4 @@ const SectionHow = () => {
     );
 };
 
-export default SectionHow;
+export default HowSection;

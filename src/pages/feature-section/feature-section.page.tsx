@@ -1,5 +1,5 @@
 import GridAndCenterContainer from '@components/grid-and-center-container/grid-and-center-container.component';
-import './section-featured.style.scss';
+import './feature-section.style.scss';
 import TechCrunch from '@assets/img/logos/techcrunch.png';
 import BusinessInsiderLogo from '@assets/img/logos/business-insider.png';
 import NewYorkTimesLogo from '@assets/img/logos/the-new-york-times.png';
@@ -11,7 +11,7 @@ type LogoAndDescription = {
     description: string;
 };
 
-const SectionFeatured = () => {
+const FeatureSection = () => {
     const logoAndDescription = [
         {
             logo: TechCrunch,
@@ -55,4 +55,4 @@ const SectionFeatured = () => {
     );
 };
 
-export default SectionFeatured;
+export default FeatureSection;
