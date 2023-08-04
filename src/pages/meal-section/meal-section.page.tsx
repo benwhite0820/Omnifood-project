@@ -1,9 +1,9 @@
 import GridAndCenterContainer from '@components/grid-and-center-container/grid-and-center-container.component';
 import './meal-section.style.scss';
 import SectionMealCard from '@components/section-meal-component/section-meal-card/section-meal-card.component';
-import sectionmealCardData from '@data/sectionMealCard.json';
+import sectionmealCardData from '@data/mealCardSection.json';
 import SectionMealCheckItem from '@components/section-meal-component/section-meal-check-item/section-meal-check-item.component';
-import sectionMealCheckItem from '@data/sectionMealCheckItem.json';
+import sectionMealCheckItem from '@data/mealCheckItemSection.json';
 
 type ResponseData = {
     image: string;

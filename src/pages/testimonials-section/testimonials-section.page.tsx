@@ -1,6 +1,6 @@
 import Testimonial from '@components/testimonial-section-component/testimonial.component';
 import './testimonials-section.style.scss';
-import testimonialData from '@data/sectionTestimonial.json';
+import testimonialData from '@data/testimonialSection.json';
 import galleryPhoto1 from '@assets/img/gallery/gallery-1.jpg';
 import galleryPhoto2 from '@assets/img/gallery/gallery-2.jpg';
 import galleryPhoto3 from '@assets/img/gallery/gallery-3.jpg';
