@@ -1,0 +1,21 @@
+@import '../../assets/scss/variable.scss';
+
+.pricing-section {
+    padding: 96px 0;
+
+    .pricing-section--header__price {
+        @include sub-heading;
+    }
+
+    .pricing-section--header__title {
+        @include heading-secondary;
+    }
+
+    .pricing-section--paragraph {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        margin-top: 48px;
+        margin-bottom: 96px;
+    }
+}

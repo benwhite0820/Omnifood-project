@@ -1,0 +1,30 @@
+@import '../../../assets/scss/variable.scss';
+
+.price-feature-section {
+    .price-feature-seciton--icon-container {
+        background-color: $background-color;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        margin-bottom: 32px;
+        position: relative;
+
+        .price-feature-seciton--icon {
+            position: absolute;
+            color: $darker-orange;
+            top: 25%;
+            right: 25%;
+        }
+    }
+
+    .price-feature-seciton--title {
+        font-size: 24px;
+        color: #333;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+    .price-feature-seciton--context {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "data": [
+        {
+            "title": "STARTER",
+            "price": "399",
+            "description": "per month. That's just $13 per meal!",
+            "feature": [
+                "1 meal per day",
+                "Order times are between 11am and 9pm",
+                "Delivery is free",
+                ""
+            ]
+        },
+        {
+            "title": "COMPLETE",
+            "price": "649",
+            "description": "per month. That's just $11 per meal!",
+            "feature": [
+                "2 meal per day",
+                "Order 24/7",
+                "Delivery is free",
+                "Get access to latest recipes"
+            ]
+        }
+    ]
+}

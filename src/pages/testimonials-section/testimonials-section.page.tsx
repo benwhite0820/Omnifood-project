@@ -59,9 +59,8 @@ const TestimonialsSection = () => {
             </div>
             <div className="gallery">
                 {galleryImage.map((item, index) => (
-                    <figure className="gallery--figure">
+                    <figure className="gallery--figure" key={index}>
                         <img
-                            key={index}
                             src={item}
                             alt="Photo of beautifully arranged food"
                             className="gallery--figure__photo"

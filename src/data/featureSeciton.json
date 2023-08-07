@@ -1,0 +1,24 @@
+{
+    "features": [
+        {
+            "logo": "infiniteOutline",
+            "title": "Never cook again!",
+            "context": "Our subscriptions cover 365 days per year, even including major holidays."
+        },
+        {
+            "logo": "nutritionOutline",
+            "title": "Local and organic",
+            "context": "Our cooks only use local, fresh, and organic products to prepare your meals."
+        },
+        {
+            "logo": "leafOutline",
+            "title": "No waste",
+            "context": "All our partners only use reusable containers to package all your meals."
+        },
+        {
+            "logo": "pauseOutline",
+            "title": "Pause anytime",
+            "context": "Going on vacation? Just pause your subscription, and we refund unused days."
+        }
+    ]
+}

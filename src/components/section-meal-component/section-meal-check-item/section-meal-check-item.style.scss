@@ -7,24 +7,17 @@
         margin-bottom: 32px;
     }
     .diet-container--items {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+        @include general-ul-style;
 
         .diet-container--item {
-            display: flex;
-            align-items: center;
-            gap: 16px;
+            @include general-li-style;
 
             span {
                 font-size: 18px;
             }
 
             .diet-container--item__logo {
-                height: 30px;
-                width: 30px;
-                color: $lighter-orange;
+                @include general-icon-style;
             }
         }
     }

@@ -1,4 +1,6 @@
-@mixin subHeading {
+@import './color.scss';
+
+@mixin sub-heading {
     display: block;
     font-size: 16px;
     font-weight: 500;
@@ -14,4 +16,23 @@
     font-weight: 700;
     color: #333;
     letter-spacing: -0.5px;
+}
+
+@mixin general-ul-style {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@mixin general-li-style {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+@mixin general-icon-style {
+    height: 30px;
+    width: 30px;
+    color: $lighter-orange;
 }
