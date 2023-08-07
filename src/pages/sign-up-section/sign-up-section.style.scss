@@ -1,0 +1,66 @@
+@import '../../assets/scss/variable.scss';
+
+.sign-up-section {
+    padding: 96px 0;
+
+    .sign-up-section--container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        background-image: linear-gradient(to right, #eb984e, #e67e22);
+        border-radius: 9px;
+        overflow: hidden;
+        box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+
+        .sign-up-section--text {
+            padding: 48px 64px 64px 64px;
+            color: #2e1907;
+
+            h2 {
+                @include heading-secondary;
+                color: #2e1907;
+                margin-bottom: 32px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.8;
+                margin-bottom: 48px;
+            }
+
+            .sign-up-section--text__form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 32px;
+                row-gap: 24px;
+
+                .sign-up-btn {
+                    width: 100%;
+                    align-self: end;
+                    text-align: center;
+                    padding: 13.5px;
+                    background-color: #45260a;
+                    color: $background-color;
+                    box-shadow: none;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: #333;
+                    }
+                }
+            }
+        }
+
+        .sign-up-section--image {
+            background-image: linear-gradient(
+                    to right,
+                    rgba(235, 151, 78, 0.35),
+                    rgba(230, 125, 34, 0.35)
+                ),
+                url('../../assets/img/eating.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
