@@ -7,6 +7,7 @@ import MealSection from '@pages/meal-section/meal-section.page';
 import TestimonialsSection from '@pages/testimonials-section/testimonials-section.page';
 import PricingSection from '@pages/pricing-section/pricing-section.page';
 import SignUpSection from '@pages/sign-up-section/sign-up-section.page';
+import FooterSection from '@pages/footer-section/footer-section.page';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
             <TestimonialsSection />
             <PricingSection />
             <SignUpSection />
+            <FooterSection />
         </>
     );
 }
