@@ -37,7 +37,7 @@ const SignUpSection = () => {
     // ];
 
     return (
-        <section className="sign-up-section">
+        <section className="sign-up-section" id="sign-up-section">
             <div className="sign-up-section--container">
                 <div className="sign-up-section--text">
                     <h2>Get your first meal for free!</h2>

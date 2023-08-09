@@ -29,7 +29,7 @@ const PricingSection = () => {
     };
 
     return (
-        <section className="pricing-section">
+        <section className="pricing-section" id="pricing-section">
             <GridAndCenterContainer container>
                 <span className="pricing-section--header__price">PRICING</span>
                 <h2 className="pricing-section--header__title">

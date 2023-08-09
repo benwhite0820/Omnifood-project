@@ -18,7 +18,7 @@ const MealSection = () => {
     };
 
     return (
-        <section className="section-meals">
+        <section className="section-meals" id="section-meals">
             <GridAndCenterContainer
                 container
                 className="section-meals--text-container"

@@ -9,7 +9,7 @@ import './how-section.style.scss';
 
 const HowSection = () => {
     return (
-        <section className="section-how">
+        <section className="section-how" id="section-how">
             <GridAndCenterContainer container>
                 <span className="description-header">HOW IT WORKS</span>
                 <p className="description-paragraph">

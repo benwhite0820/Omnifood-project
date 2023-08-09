@@ -41,7 +41,7 @@ const TestimonialsSection = () => {
     ];
 
     return (
-        <section className="seciton-testimonials">
+        <section className="seciton-testimonials" id="seciton-testimonials">
             <div className="testimonials--container">
                 <span>TESTIMONIALS</span>
                 <h2>Once you try it, you can't go back</h2>
