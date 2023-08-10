@@ -8,12 +8,16 @@ import TestimonialsSection from '@pages/testimonials-section/testimonials-sectio
 import PricingSection from '@pages/pricing-section/pricing-section.page';
 import SignUpSection from '@pages/sign-up-section/sign-up-section.page';
 import FooterSection from '@pages/footer-section/footer-section.page';
+import React from 'react';
 
 function App() {
+    const [isHeroSectionVisible, setIsHeroSectionVisible] =
+        React.useState(true);
+
     return (
         <>
-            <HeaderAndNavigation />
-            <HeroSection />
+            <HeaderAndNavigation isHeroSectionVisible={isHeroSectionVisible} />
+            <HeroSection setIsHeroSectionVisible={setIsHeroSectionVisible} />
             <FeatureSection />
             <HowSection />
             <MealSection />

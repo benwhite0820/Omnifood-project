@@ -7,11 +7,42 @@ import CustomLogo4 from '@assets/img/customers/customer-4.jpg';
 import CustomLogo5 from '@assets/img/customers/customer-5.jpg';
 import CustomLogo6 from '@assets/img/customers/customer-6.jpg';
 import Button from '@components/button/button.component';
+import React from 'react';
 
-const HeroSection = () => {
+type Props = {
+    setIsHeroSectionVisible: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const HeroSection = ({ setIsHeroSectionVisible }: Props) => {
+    const heroSectionRef = React.useRef<HTMLDivElement | null>(null);
+
+    const callbackFunction = (entries: Array<IntersectionObserverEntry>) =>
+        setIsHeroSectionVisible(entries[0].isIntersecting);
+
+    const options = {
+        root: null,
+        threshold: 0,
+    };
+
+    React.useEffect(() => {
+        let observer: IntersectionObserver | null = null;
+
+        if (!heroSectionRef.current) return;
+
+        observer = new IntersectionObserver(callbackFunction, options);
+
+        observer.observe(heroSectionRef.current);
+
+        return () => {
+            if (observer) {
+                observer.disconnect();
+            }
+        };
+    }, []);
+
     return (
         <main>
-            <section className="section-hero">
+            <section className="section-hero" ref={heroSectionRef}>
                 <div className="hero">
                     <div className="hero-text-box">
                         <h1 className="hero-primary-text">

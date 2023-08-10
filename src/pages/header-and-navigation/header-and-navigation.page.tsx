@@ -3,7 +3,11 @@ import './header-and-navigation.style.scss';
 import { IoMenuOutline, IoCloseOutline } from 'react-icons/io5';
 import React from 'react';
 
-const HeaderAndNavigation = () => {
+type Props = {
+    isHeroSectionVisible: boolean;
+};
+
+const HeaderAndNavigation = ({ isHeroSectionVisible }: Props) => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     const navBarTitle = [
@@ -15,7 +19,7 @@ const HeaderAndNavigation = () => {
     ];
 
     return (
-        <header className="header">
+        <header className={`header ${isHeroSectionVisible ? '' : 'sticky'}`}>
             <a href="#">
                 <img className="logo" src={Logo} />
             </a>
