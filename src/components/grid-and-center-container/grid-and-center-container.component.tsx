@@ -31,7 +31,7 @@ const GridAndCenterContainer = ({
     const resizeTimerRef = React.useRef<number | null>(null);
 
     const getGridResponsiveColumns = () => {
-        if (currentWidth > 700) columns;
+        if (currentWidth > 700) return columns;
         if (currentWidth < 700 && currentWidth > 544) return 2;
         return 1;
     };
