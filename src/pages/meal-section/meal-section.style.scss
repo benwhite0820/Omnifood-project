@@ -1,7 +1,7 @@
 @import '../../assets/scss/variable.scss';
 
 .section-meals {
-    padding: 96px 0;
+    padding: 9.6rem 0;
 
     .section-meals--text-container {
         text-align: center;
@@ -12,25 +12,33 @@
 
         .section-meal--paragraph {
             @include heading-secondary;
+
+            @include landscape-desktop {
+                @include heading-secondary(3.6rem);
+            }
+
+            @include smaller-tablet {
+                @include heading-secondary(3.6rem, 4.8rem);
+            }
         }
     }
 
     .section-meals--link-container {
         text-align: center;
-        margin-top: 48px;
+        margin-top: 4.8rem;
 
         a:link,
         a:visited {
-            font-size: 18px;
+            font-size: 1.8rem;
             text-decoration: none;
             color: $lighter-orange;
-            border-bottom: 1px solid currentColor;
+            border-bottom: 0.1rem solid currentColor;
             transition: all 0.3s;
         }
 
         a:hover,
         a:active {
-            border-bottom: 1px solid transparent;
+            border-bottom: 0.1rem solid transparent;
             color: $darker-orange;
         }
     }

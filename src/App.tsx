@@ -1,5 +1,5 @@
 import HeaderAndNavigation from '@pages/header-and-navigation/header-and-navigation.page';
-import './App.css';
+import './App.scss';
 import HeroSection from '@pages/hero-section/hero-section.page';
 import HowSection from '@pages/how-section/how-section.page';
 import FeatureSection from '@pages/feature-section/feature-section.page';

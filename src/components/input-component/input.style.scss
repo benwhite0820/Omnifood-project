@@ -2,24 +2,24 @@
 .input-container {
     label {
         display: block;
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 500;
-        margin-bottom: 12px;
+        margin-bottom: 1.2rem;
     }
     select,
     input {
         width: 100%;
-        padding: 12px;
-        font-size: 18px;
+        padding: 1.2rem;
+        font-size: 1.8rem;
         color: inherit;
         border: none;
         background-color: #fdf2e9;
-        border-radius: 9px;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 0.9rem;
+        box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
 
         &:focus {
             outline: none;
-            box-shadow: 0 0 0 8px rgba(253, 242, 233, 0.5);
+            box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
         }
 
         &::placeholder {

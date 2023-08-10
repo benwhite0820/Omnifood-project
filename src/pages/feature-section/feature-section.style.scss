@@ -1,12 +1,14 @@
+@import '../../assets/scss/variable.scss';
+
 .section-featured {
-    padding: 48px 0 32px 0;
+    padding: 4.8rem 0 3.2rem 0;
 
     .section-featured--text {
-        font-size: 14px;
-        letter-spacing: 0.75px;
+        font-size: 1.4rem;
+        letter-spacing: 0.7.5rem;
         font-weight: 500;
         text-align: center;
-        margin-bottom: 24px;
+        margin-bottom: 2.4rem;
         color: #888;
     }
 
@@ -15,9 +17,33 @@
         justify-content: space-around;
 
         img {
-            height: 32px;
+            height: 3.2rem;
             filter: brightness(0);
             opacity: 50%;
+        }
+    }
+
+    @include tablet {
+        .section-featured--logos {
+            img {
+                height: 2.8rem;
+            }
+        }
+    }
+
+    @include smaller-desktop {
+        .section-featured--logos {
+            img {
+                height: 2.4rem;
+            }
+        }
+    }
+
+    @include mobile {
+        .section-featured--logos {
+            img {
+                height: 1.2rem;
+            }
         }
     }
 }

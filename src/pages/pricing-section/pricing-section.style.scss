@@ -1,7 +1,7 @@
 @import '../../assets/scss/variable.scss';
 
 .pricing-section {
-    padding: 96px 0;
+    padding: 9.6rem 0;
 
     .pricing-section--header__price {
         @include sub-heading;
@@ -9,13 +9,21 @@
 
     .pricing-section--header__title {
         @include heading-secondary;
+
+        @include landscape-desktop {
+            @include heading-secondary(3.6rem);
+        }
+
+        @include smaller-tablet {
+            @include heading-secondary(3.6rem, 4.8rem);
+        }
     }
 
     .pricing-section--paragraph {
-        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 1.6;
         text-align: center;
-        margin-top: 48px;
-        margin-bottom: 96px;
+        margin-top: 4.8rem;
+        margin-bottom: 9.6rem;
     }
 }

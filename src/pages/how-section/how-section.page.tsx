@@ -17,7 +17,13 @@ const HowSection = () => {
                 </p>
             </GridAndCenterContainer>
 
-            <GridAndCenterContainer grid columns={2} container verticalCenter>
+            <GridAndCenterContainer
+                grid
+                columns={2}
+                container
+                verticalCenter
+                className=""
+            >
                 {/* ---------- PART 01 ---------- */}
                 <SectionHowText
                     step={'01'}
@@ -28,7 +34,6 @@ const HowSection = () => {
                     image={SectionHowAppScreen1}
                     description="iPhone app preferences selection screen"
                 />
-                {/* ----------------------------- */}
                 {/* ---------- PART 02 ---------- */}
                 <SectionHowImg
                     image={SectionHowAppScreen2}
@@ -39,7 +44,6 @@ const HowSection = () => {
                     title={SectionHowData['02'].title}
                     context={SectionHowData['02'].context}
                 />
-                {/* ----------------------------- */}
                 {/* ---------- PART 03 ---------- */}
                 <SectionHowText
                     step={'03'}

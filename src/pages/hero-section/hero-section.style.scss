@@ -1,55 +1,55 @@
-@import '@assets/scss/color.scss';
+@import '../../assets/scss/variable.scss';
 
 .section-hero {
     background-color: $background-color;
-    padding: 48px 0 96px 0;
+    padding: 4.8rem 0 9.6rem 0;
 
     .hero {
-        max-width: 1300px;
+        max-width: 130rem;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        gap: 96px;
-        padding: 0 32px;
+        gap: 9.6rem;
+        padding: 0 3.2rem;
 
         .hero-text-box {
             .hero-primary-text {
-                font-size: 52px;
+                font-size: 5.2rem;
                 font-weight: 700;
                 line-height: 1.05;
                 color: #333;
                 letter-spacing: -0.5px;
-                margin-bottom: 32px;
+                margin-bottom: 3.2rem;
             }
 
             .hero-description {
-                font-size: 20px;
+                font-size: 2rem;
                 line-height: 1.6;
-                margin-bottom: 48px;
+                margin-bottom: 4.8rem;
             }
 
             .margin-right {
-                margin-right: 16px;
+                margin-right: 1.6rem;
             }
         }
 
         .custom-logo-box {
             display: flex;
-            margin-top: 80px;
+            margin-top: 8rem;
             align-items: center;
 
             img {
-                width: 64px;
-                height: 64px;
+                width: 6.4rem;
+                height: 6.4rem;
                 border-radius: 50%;
-                margin-right: -16px;
-                border: 3px solid $background-color;
+                margin-right: -1.6rem;
+                border: 0.3rem solid $background-color;
             }
 
             p {
-                margin-left: 32px;
-                font-size: 16px;
+                margin-left: 3.2rem;
+                font-size: 1.6rem;
                 font-weight: 600;
                 span {
                     font-weight: bold;
@@ -61,6 +61,53 @@
         .hero-section-img {
             .hero-img {
                 width: 100%;
+            }
+        }
+
+        @include smaller-desktop {
+            max-width: 120rem;
+
+            .hero-text-box {
+                .hero-primary-text {
+                    font-size: 4.4rem;
+                }
+            }
+        }
+
+        @include landscape-desktop {
+            gap: 4.8rem;
+        }
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            padding: 0 8rem;
+            gap: 6.4rem;
+
+            .hero-text-box,
+            .hero-section-img {
+                text-align: center;
+
+                .hero-img {
+                    width: 60%;
+                }
+            }
+
+            .custom-logo-box {
+                justify-content: center;
+                margin-top: 3.2rem;
+            }
+        }
+    }
+    @include mobile {
+        padding: 2.4rem 0 6.4rem 0;
+
+        .hero {
+            padding: 0 3.2rem;
+
+            .hero-section-img {
+                .hero-img {
+                    width: 80%;
+                }
             }
         }
     }

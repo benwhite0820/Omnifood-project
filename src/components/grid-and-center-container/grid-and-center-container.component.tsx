@@ -27,9 +27,38 @@ const GridAndCenterContainer = ({
     container = false,
     verticalCenter = false,
 }: Props) => {
-    const gridColumns = {
-        gridTemplateColumns: `repeat(${columns}, 1fr)`,
+    const [currentWidth, setCurrentWidth] = React.useState(window.innerWidth);
+    const resizeTimerRef = React.useRef<number | null>(null);
+
+    const getGridResponsiveColumns = () => {
+        if (currentWidth > 700) columns;
+        if (currentWidth < 700 && currentWidth > 544) return 2;
+        return 1;
     };
+
+    const gridColumns = {
+        gridTemplateColumns: `repeat(${getGridResponsiveColumns()}, 1fr)`,
+    };
+
+    React.useEffect(() => {
+        const handleResize = () => {
+            if (resizeTimerRef.current) {
+                clearTimeout(resizeTimerRef.current);
+            }
+            resizeTimerRef.current = window.setTimeout(() => {
+                setCurrentWidth(window.innerWidth);
+            }, 1000);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+            if (resizeTimerRef.current) {
+                clearTimeout(resizeTimerRef.current);
+            }
+        };
+    }, []);
 
     return (
         <div

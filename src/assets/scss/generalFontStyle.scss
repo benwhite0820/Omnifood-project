@@ -2,17 +2,17 @@
 
 @mixin sub-heading {
     display: block;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     color: $darker-orange;
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
     letter-spacing: 0.75px;
 }
 
-@mixin heading-secondary {
-    font-size: 44px;
+@mixin heading-secondary($font-size: 4.4rem, $margin-bottom: 4.8rem) {
+    font-size: $font-size;
     line-height: 1.2;
-    margin-bottom: 96px;
+    margin-bottom: $margin-bottom;
     font-weight: 700;
     color: #333;
     letter-spacing: -0.5px;
@@ -22,17 +22,19 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1.6rem;
 }
 
 @mixin general-li-style {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1.6rem;
+    line-height: 1.2;
+    font-size: 1.8rem;
 }
 
 @mixin general-icon-style {
-    height: 30px;
-    width: 30px;
+    height: 3rem;
+    width: 3rem;
     color: $lighter-orange;
 }
