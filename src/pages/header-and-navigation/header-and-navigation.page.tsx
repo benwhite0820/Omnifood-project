@@ -54,6 +54,7 @@ const HeaderAndNavigation = ({ isHeroSectionVisible }: Props) => {
                     <IoCloseOutline
                         onClick={() => setIsMenuOpen(false)}
                         size={48}
+                        style={{ position: 'fixed', top: '5', right: '25' }}
                     />
                 ) : (
                     <IoMenuOutline
